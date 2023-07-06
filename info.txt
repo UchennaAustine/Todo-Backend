@@ -1,0 +1,16 @@
+Node js is running on two things
+Node js has a partial truth of being a Single Thread
+
+*V8 engine which runs JavaScript
+*LIBUV {C++} - This is also called a thread pool
+
+All native codes are codes that are already built on Node js .i.e.
+
+What is a Promise?  
+Node js is a single threaded application which means 
+request comes in one way which is in a stacked method.
+Js is a synchronous Language which is bad for some reasons
+
+Process kicks starts and Event Loop.
+
+String() //this is a string constructor/class

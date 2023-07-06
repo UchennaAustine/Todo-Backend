@@ -1,0 +1,13 @@
+Create A Shop 
+
+DB - shopDB
+
+
+*Customers Can See Products
+Collections - Customers and Products
+
+Operation CRUD
+customer  - Name, Email
+
+
+packages - dotenv @types/dotenv
