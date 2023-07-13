@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ipRouter = void 0;
+const express_1 = require("express");
+const inProgressTaskController_1 = require("../controllers/inProgressTaskController");
+exports.ipRouter = (0, express_1.Router)();
+exports.ipRouter.route("/viewTaskInProgress").get(inProgressTaskController_1.viewTaskInProgress);
+exports.ipRouter.route("/addTaskInProgress").post(inProgressTaskController_1.createInProgressTask);
+exports.ipRouter.route("/viewTaskInProgress/:_id").get(inProgressTaskController_1.viewSingleTaskInProgress);
+exports.ipRouter.route("/updateTaskInProgress/:_id").patch(inProgressTaskController_1.updateTaskInProgress);
+exports.ipRouter.route("/deleteTaskInProgress/:_id").delete(inProgressTaskController_1.deleteTaskInProgress);

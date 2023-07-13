@@ -1,5 +1,5 @@
 {
-  "name": "mrjoe's-1stclass",
+  "name": "TodoBE",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -150,13 +150,16 @@
     "yn": "^3.1.1"
   },
   "scripts": {
-    "dev": "nodemon ./src/index.ts",
+    "start": "node ./src/dist/src/index.js",
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
     "@types/cors": "^2.8.13"
   }
 }

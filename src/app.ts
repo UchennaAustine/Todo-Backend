@@ -3,6 +3,7 @@ import cors from "cors";
 import { router } from "../route/taskRouter";
 import { ipRouter } from "../route/inProgressTaskRouter";
 import { authRouter } from "../route/authRouter";
+import { dRouter } from "../route/doneTaskRouter";
 
 export const App = (app: Application) => {
   app
@@ -10,5 +11,6 @@ export const App = (app: Application) => {
     .use(cors())
     .use("/api/v1", router)
     .use("/api/v1/ip", ipRouter)
+    .use("/api/v1/done", dRouter)
     .use("/api/v1/auth", authRouter);
 };

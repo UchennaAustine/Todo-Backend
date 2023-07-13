@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.dRouter = void 0;
+const express_1 = require("express");
+const doneTaskController_1 = require("../controllers/doneTaskController");
+exports.dRouter = (0, express_1.Router)();
+exports.dRouter.route("/createDoneTask").post(doneTaskController_1.createDoneTask);
+exports.dRouter.route("/viewDoneTasks").get(doneTaskController_1.viewDoneTasks);
+exports.dRouter.route("/viewSingleDoneTask/:_id").get(doneTaskController_1.viewSingleDoneTask);
+exports.dRouter.route("/updateDoneTask/:_id").patch(doneTaskController_1.updateDoneTask);
+exports.dRouter.route("/deleteDoneTask/:_id").delete(doneTaskController_1.deleteDoneTask);
